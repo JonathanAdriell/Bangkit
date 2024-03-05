@@ -7,8 +7,8 @@ import streamlit as st
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 # Load files
-day_df = pd.read_csv("day.csv")
-hour_df = pd.read_csv("hour.csv")
+day_df = pd.read_csv("submission/dashboard/day.csv")
+hour_df = pd.read_csv("submission/dashboard/hour.csv")
 
 # Create groups
 penyewaan_per_musim = day_df.groupby(['yr', 'season'])['cnt'].sum()
